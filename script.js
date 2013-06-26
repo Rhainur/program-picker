@@ -13,6 +13,7 @@ $(document).ready( function(){
 
 function displayQuestion(routeString){
 	$('.stack-container,.question-container,.choice-container,.answer-container').empty();
+	$('.min-strength-warning').hide();
 
 	var invalidFlag = false;
 	var route=[];
@@ -31,7 +32,7 @@ function displayQuestion(routeString){
 
 	if(routeString.length > 0 && routeString[routeString.length-1]!='/')
 		routeString+='/';
-	
+
 	var currentNode = qData;
 	var stackHTML=$('<div />'),stackNode=null;
 
@@ -51,6 +52,8 @@ function displayQuestion(routeString){
 
 	if(currentNode.answer!==null){
 		$('.answer-container').html(currentNode.answer);
+		if(currentNode.min_strength_level == true)
+			$('.min-strength-warning').show();
 	}else{
 
 		$('.question-container').html(currentNode.question);
@@ -62,9 +65,10 @@ function displayQuestion(routeString){
 		$('.choice-container').html(outputHTML);
 	}
 
-	$('.choice-container a,.stack-container a').off().click(function(){
+	$('.choice-container a,.stack-container a,.min-strength-warning a').off().click(function(){
 		displayQuestion($(this).attr('href').substring(1));
-		$('html,body').animate({scrollTop: $('.stack-container').position().top});
+		if($(window).scrollTop() > $('.stack-container').position().top)
+			$('html,body').animate({scrollTop: $('.stack-container').position().top});
 	});
 }
 
