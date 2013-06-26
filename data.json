@@ -1,239 +1,260 @@
 {
-    "question": "What is your primary fitness goal or area of interest?",
-    "choices": {
-        "muscle_gain": "Muscle Gain",
-        "fat_loss": "Fat Loss",
-        "flexibility": "Flexibility/Mobility",
-        "cardio": "Cardio/Endurance",
-        "posture": "Posture Improvement",
-        "military": "Police/Military Training",
-        "bodyweight": "Bodyweight Training",
-        "technique": "Lifting Technique"
-    },
-    "children": {
-        "muscle_gain": {
-            "question": "Why are you trying to gain muscle?",
+  "question": "What is your primary fitness goal or area of interest?",
+  "choices": {
+    "muscle_gain": "Muscle Gain",
+    "fat_loss": "Fat Loss",
+    "flexibility": "Flexibility/Mobility",
+    "cardio": "Cardio/Endurance",
+    "posture": "Posture Improvement",
+    "military": "Police/Military Training",
+    "bodyweight": "Bodyweight Training",
+    "technique": "Lifting Technique"
+  },
+  "children": {
+    "muscle_gain": {
+      "question": "Why are you trying to gain muscle?",
+      "choices": {
+        "sports": "I want to get better at my sport",
+        "aesthetics": "I want to improve how my body looks",
+        "powerlifting": "I want to get better at powerlifting",
+        "strength": "I just want to increase my strength"
+      },
+      "children": {
+        "sports": {
+          "question": "What aspect are you trying to improve?",
+          "choices": {
+            "conditioning": "Conditioning",
+            "vertical_leap": "Vertical Leap"
+          },
+          "children": {
+            "conditioning": {
+              "answer": "<p>If you wish to improve your conditioning or endurance, you can try <a href=\"http://www.t-nation.com/free_online_article/most_recent/the_6week_sprinting_solution\">sprinting</a>, or some other form of <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT</a> program ( here's <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">another</a> ). Make sure you adjust your diet to accommodate the increased load on your body.</p><p>One of the most commonly neglected muscle groups in athletes is the posterior chain. Everyone wants bulging biceps and a chest that forces you to walk through doorways sideways. However, the back, glutes and hamstrings contribute massively to a powerful body, and to a great sprint.  Look into <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/dispelling_the_glute_myth\">building up powerful glutes</a>, and you'll get a powerful sprint in no time. Having <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/the_lost_art_of_hamstring_training\">strong hamstrings</a> (also read <a href=\"http://www.t-nation.com/free_online_article/most_recent/12_steps_to_kick_ass_hamstrings\">this</a>) will save you from losing months of workout time due to injuries. Finally, make sure you're aware of the basics of <a href=\"http://www.therunningadvisor.com/Training.html\">warming up for running</a></p>"
+            },
+            "vertical_leap": {
+              "answer": "<p>Here are a <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/leap_tall_buildings_and_build_traps_of_steel\">couple</a> of <a href=\"http://www.higher-faster-sports.com/jumphigher.html\">programs</a> to help improve your vertical leap.</a> It might also help to read <a href=\"http://www.higher-faster-sports.com/vjmistakes.html\">this</a>.</p>"
+            }
+          },
+          "answer": null
+        },
+        "aesthetics": {
+          "question": "Do you prefer focusing on one body part per workout or whole body workouts?",
+          "choices": {
+            "split": "Body part split",
+            "whole_body": "Whole body workouts"
+          },
+          "children": {
+            "split": {
+              "answer": "<p>There's a lot of muscle-building programs out there. Here are some of the tried and tested ones:</p><p><a href=\"http://www.bodybuilding.com/fun/luis13.htm\">German Volume Training</a> is based around doing 10 sets of 10 reps with the same weight (usually around 60% of your 1RM).</p><p>In <a href=\"http://www.simplyshredded.com/mega-feature-layne-norton-training-series-full-powerhypertrophy-routine-updated-2011.html\">PHAT</a>, each muscle gets worked 2x/week. The first 2 days of the week are split into upper and lower body power days. This is followed by a rest day. Then 3 days of traditional hypertrophy orientated bodybuilding training.</p><p><a href=\"http://dc-training.blogspot.com/\">Doggcrapp</a> is an advanced hybrid strength / hypertrophy routine with extremely low volume / high frequency principles. Exercises are limited to one per muscle group each session in a 2-way split. The program emphasizes heavy free weights, multi-rep rest pause sets to failure, deep stretching and intermittent 2 week cruise phases.</p><p><a href=\"http://www.defrancostraining.com/articles/38-articles/65-westside-for-skinny-bastards-part3.html\">WS4SB</a> and the Boring But Big (BBB) variant of <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/how_to_build_pure_strength\">5/3/1</a> are excellent bodypart split workouts if you wish to work on strength and hypertrophy at the same time.</p> <p>You can generate workouts for <a href=\"https://strengthcalc.com/?prog=gvt\">German Volume Training</a>, <a href=\"https://strengthcalc.com/?prog=phat\">PHAT</a> and a generic <a href=\"https://strengthcalc.com/?prog=bodypartsplit\">body part split</a> at <a href=\"https://strengthcalc.com/\">StrengthCalc.com</a> </p> <p>A couple of critical aspects of gaining muscle that are often overlooked are diet and rest. Keep your protein intake high ( 1g of protein per pound of lean body mass ), and make sure you're getting enough sleep.</p>",
+              "min_strength_level": true
+            },
+            "whole_body": {
+              "answer": "<p><a href=\"http://forum.bodybuilding.com/showthread.php?t=134370001\">Greyskull LP</a> is an excellent hypertrophy program that focuses on whole body workouts</p><p>A couple of critical aspects of gaining muscle that are often overlooked are diet and rest. Keep your protein intake high ( 1g of protein per pound of lean body mass ), and make sure you're getting enough sleep.</p>",
+              "min_strength_level": true
+            }
+          },
+          "answer": null
+        },
+        "strength": {
+          "question": "What is your current strength level?",
+          "choices": {
+            "beginner": "I've never lifted before/My strength isn't too high",
+            "intermediate": "I have intermediate strength levels"
+          },
+          "children": {
+            "beginner": {
+              "answer": "<p>You should try <a href=\"http://startingstrength.wikia.com/wiki/FAQ:Introduction\">Starting Strength</a> or <a href=\"http://stronglifts.com/stronglifts-5x5-beginner-strength-training-program/\">StrongLifts</a>. These programs are designed for people who are beginners at weightlifting, and both websites provide plenty of information to get you started. They have been proven time and again to result in rapid strength gains for trainees who have an adequate diet. You can add a <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT</a> program ( here's <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">another</a> ) if you wish to boost your fat loss, but make sure you adjust your diet to account for the extra energy expenditure.</p> <p>You can generate a workout of this type at <a href=\"https://strengthcalc.com/?prog=lp\">StrengthCalc.com</a> </p> <p>Along with that, increasing your protein intake will come in handy to maximize your  muscle gain. Depending on your dietary preferences, you might want to look at diets such as Paleo/Primal. Keep in mind that those are by no means the only options. Simply increasing the percentage of protein in your daily intake while maintaining the number of calories will provide positive results. Consuming 1g of protein per pound of <strong>lean</strong> body weight is usually considered optimal.</p>"
+            },
+            "intermediate": {
+              "answer": "<p>You should try <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/how_to_build_pure_strength\">5/3/1</a>. It's an intermediate program that focuses on 4 big lifts (bench, deadlift, squat, military press) and dedicates a workout day to each. If you don't like split workouts and prefer whole-body workouts, try the <a href=\"http://www.t-nation.com/free_online_article/most_recent/the_texas_method\">Texas Method</a> or <a href=\"http://stronglifts.com/madcow-5x5-training-programs/\">Madcow 5x5</a>.</p> <p>You can add <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT sprinting</a>, hill sprints, stadium sprints or <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">something like this</a> if you feel the need to burn some extra fat.</p> <p>You can generate workouts for <a href=\"https://strengthcalc.com/?prog=531\">5/3/1</a>, <a href=\"https://strengthcalc.com/?prog=texasmethod\">Texas Method</a> and <a href=\"https://strengthcalc.com/?prog=madcow\">Madcow</a> at <a href=\"https://strengthcalc.com/\">StrengthCalc.com</a> </p> <p>Along with that, increasing your protein intake will come in handy to maximize your muscle gain. Depending on your dietary preferences, you might want to look at diets such as Paleo/Primal. Keep in mind that those are by no means the only options. Simply increasing the percentage of protein in your daily intake while maintaining the number of calories will provide positive results. Consuming 1g of protein per pound of <strong>lean</strong> body weight is usually considered optimal.</p>",
+              "min_strength_level": true
+            }
+          },
+          "answer": null
+        },
+        "powerlifting": {
+            "question": "What lift are you trying to improve?",
             "choices": {
-                "sports": "I want to get better at my sport",
-                "aesthetics": "I want to improve how my body looks",
-                "strength": "I just want to increase my strength"
+                "squat": "Squat",
+                "deadlift": "Deadlift",
+                "bench": "Bench Press"
             },
             "children": {
-                "sports": {
-                    "question": "What aspect are you trying to improve?",
-                    "choices": {
-                    	"conditioning": "Conditioning",
-                    	"vertical_leap": "Vertical Leap"
-                    },
-                    "children": {
-                    	"conditioning": {
-                    		"answer": "<p>If you wish to improve your conditioning or endurance, you can try <a href=\"http://www.t-nation.com/free_online_article/most_recent/the_6week_sprinting_solution\">sprinting</a>, or some other form of <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT</a> program ( here's <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">another</a> ). Make sure you adjust your diet to accommodate the increased load on your body.</p><p>One of the most commonly neglected muscle groups in athletes is the posterior chain. Everyone wants bulging biceps and a chest that forces you to walk through doorways sideways. However, the back, glutes and hamstrings contribute massively to a powerful body, and to a great sprint.  Look into <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/dispelling_the_glute_myth\">building up powerful glutes</a>, and you'll get a powerful sprint in no time. Having <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/the_lost_art_of_hamstring_training\">strong hamstrings</a> (also read <a href=\"http://www.t-nation.com/free_online_article/most_recent/12_steps_to_kick_ass_hamstrings\">this</a>) will save you from losing months of workout time due to injuries. Finally, make sure you're aware of the basics of <a href=\"http://www.therunningadvisor.com/Training.html\">warming up for running</a></p>"
-                    	},
-                    	"vertical_leap": {
-                    		"answer": "<p>Here are a <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/leap_tall_buildings_and_build_traps_of_steel\">couple</a> of <a href=\"http://www.higher-faster-sports.com/jumphigher.html\">programs</a> to help improve your vertical leap.</a> It might also help to read <a href=\"http://www.higher-faster-sports.com/vjmistakes.html\">this</a>.</p>"
-                    	}
-                    },
-                    "answer":null
-                },
-                "aesthetics": {
-                	"question": "Do you prefer focusing on one body part per workout or whole body workouts?",
-                	"choices": {
-                		"split": "Body part split",
-                		"whole_body": "Whole body workouts"
-                	},
-                	"children": {
-                		"split": {
-                			"answer": "<p>There's a lot of muscle-building programs out there. Here are some of the tried and tested ones:</p><p><a href=\"http://www.bodybuilding.com/fun/luis13.htm\">German Volume Training</a> is based around doing 10 sets of 10 reps with the same weight (usually around 60% of your 1RM).</p><p>In <a href=\"http://www.simplyshredded.com/mega-feature-layne-norton-training-series-full-powerhypertrophy-routine-updated-2011.html\">PHAT</a>, each muscle gets worked 2x/week. The first 2 days of the week are split into upper and lower body power days. This is followed by a rest day. Then 3 days of traditional hypertrophy orientated bodybuilding training.</p><p><a href=\"http://dc-training.blogspot.com/\">Doggcrapp</a> is an advanced hybrid strength / hypertrophy routine with extremely low volume / high frequency principles. Exercises are limited to one per muscle group each session in a 2-way split. The program emphasizes heavy free weights, multi-rep rest pause sets to failure, deep stretching and intermittent 2 week cruise phases.</p><p><a href=\"http://www.defrancostraining.com/articles/38-articles/65-westside-for-skinny-bastards-part3.html\">WS4SB</a> and the Boring But Big (BBB) variant of <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/how_to_build_pure_strength\">5/3/1</a> are excellent bodypart split workouts if you wish to work on strength and hypertrophy at the same time.</p><p>Alternately, you could try a program based on this <a href=\"http://forums.somethingawful.com/showthread.php?threadid=2498019\">template</a>. </p><p>A couple of critical aspects of gaining muscle that are often overlooked are diet and rest. Keep your protein intake high ( 1g of protein per pound of lean body mass ), and make sure you're getting enough sleep.</p>",
-                            "min_strength_level": true
-                		},
-                		"whole_body": {
-                			"answer": "<p><a href=\"http://forum.bodybuilding.com/showthread.php?t=134370001\">Greyskull LP</a> is an excellent hypertrophy program that focuses on whole body workouts</p><p>A couple of critical aspects of gaining muscle that are often overlooked are diet and rest. Keep your protein intake high ( 1g of protein per pound of lean body mass ), and make sure you're getting enough sleep.</p>",
-                            "min_strength_level": true
-                		}
-                	},
-                    "answer":null
-                },
-                "strength":{
-                    "question":"What is your current strength level?",
-                    "choices":{
-                        "beginner":"I've never lifted before/My strength isn't too high",
-                        "intermediate":"I have intermediate strength levels"
-                    },
-                    "children":{
-                        "beginner": {
-                            "answer": "<p>You should try <a href=\"http://startingstrength.wikia.com/wiki/FAQ:Introduction\">Starting Strength</a> or <a href=\"http://stronglifts.com/stronglifts-5x5-beginner-strength-training-program/\">StrongLifts</a>. These programs are designed for people who are beginners at weightlifting, and both websites provide plenty of information to get you started. They have been proven time and again to result in rapid strength gains for trainees who have an adequate diet. You can add a <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT</a> program ( here's <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">another</a> ) if you wish to boost your fat loss, but make sure you adjust your diet to account for the extra energy expenditure.</p> <p>Along with that, increasing your protein intake will come in handy to maximize your  muscle gain. Depending on your dietary preferences, you might want to look at diets such as Paleo/Primal. Keep in mind that those are by no means the only options. Simply increasing the percentage of protein in your daily intake while maintaining the number of calories will provide positive results. Consuming 1g of protein per pound of <strong>lean</strong> body weight is usually considered optimal.</p>"
-                        },
-                        "intermediate": {
-                            "answer": "<p>You should try <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/how_to_build_pure_strength\">5/3/1</a>. It's an intermediate program that focuses on 4 big lifts (bench, deadlift, squat, military press) and dedicates a workout day to each.</p><p>If you don't like split workouts and prefer whole-body workouts, try the <a href=\"http://www.t-nation.com/free_online_article/most_recent/the_texas_method\">Texas Method</a> or <a href=\"http://stronglifts.com/madcow-5x5-training-programs/\">Madcow 5x5</a></p><p>You can add <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT sprinting</a>, hill sprints, stadium sprints or <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">something like this</a> if you feel the need to burn some extra fat.</p><p>Along with that, increasing your protein intake will come in handy to maximize your muscle gain. Depending on your dietary preferences, you might want to look at diets such as Paleo/Primal. Keep in mind that those are by no means the only options. Simply increasing the percentage of protein in your daily intake while maintaining the number of calories will provide positive results. Consuming 1g of protein per pound of <strong>lean</strong> body weight is usually considered optimal.</p>",
-                            "min_strength_level": true
-                        }
-                    },
-                    "answer": null
-                }
+                "squat": {
+              "answer": "<p><a href=\"http://stronglifts.com/how-to-add-100-pounds-to-your-squat-smolov/\">Smolov</a> is a 13 week program designed to help intermediate/advanced lifters who want to increase their squat. </p> <p>You can generate workouts for <a href=\"https://strengthcalc.com/?prog=smolov\">Smolov</a> at <a href=\"https://strengthcalc.com/\">StrengthCalc.com</a> </p>" }
+              ,
+                "deadlift": {
+              "answer": "<p><a href=\"http://www.powerpage.net/coanphildead.html\">Coan Phillipi</a> and <a href=\"http://ironmillstrong.com/review-of-magnussonortmayer-deadlift-program/\">Magnusson/Ortmayer</a> are two well-known programs that have been used by established powerlifters to take their deadlifts to the next level. Coan Phillipi is a program focused on the deadlift while Mag/Ort has been adapted to work with all the lifts.</p> <p>You can generate workouts for <a href=\"https://strengthcalc.com/?prog=coan\">Coan Phillipi</a> and <a href=\"https://strengthcalc.com/?prog=magort\">Mag/Ort</a> at <a href=\"https://strengthcalc.com/\">StrengthCalc.com</a> </p>"
+              },
+                "bench": {
+              "answer": "<p><a href=\"http://stronglifts.com/how-to-add-100-pounds-to-your-squat-smolov/\">Smolov</a> is a 13 week program designed to help intermediate/advanced lifters who want to increase their squat. <a href=\"http://www.seriouspowerlifting.com/2362/articles/smolov-jr\">Smolov Jr</a> is a 3 week adaptation that can be applied any lift, but is most commonly used for the bench press. </p> <p>You can generate workouts for <a href=\"https://strengthcalc.com/?prog=smolovjr\">Smolov Jr</a> at <a href=\"https://strengthcalc.com/\">StrengthCalc.com</a> </p>"
+          }
             },
             "answer": null
-        },
-        "fat_loss": {
-            "question": "How much weight do you need to lose?",
-            "choices": {
-                "minor": "Less than 10kg/25lbs",
-                "major": "More than 10kg/25lbs"
-            },
-            "children": {
-                "minor": {
-                    "answer": "<p>Use a calculator such as <a href=\"http://www.deflab.me\">this one</a> to get an estimation of how many calories you should be consuming daily. Increase the amount of vegetables you consume (potatoes don't count :) ) because fiber helps in giving a feeling of fullness. Increasing your protein intake (via either consuming more meat or simply drinking whey protein shakes ) will both boost muscle gain and provide a longer-lasting feeling of fullness than carbs will.</p><p>Take weekly photographs of yourself, preferably in underwear/shorts so that you can see your belly, thighs and arms. If you're gaining muscle while losing fat, the weight on the scale may change less than you expect, but the mirror doesn't lie. Recording everything you eat will also make you more conscious about your intake and definitely helps in weight loss.</p><p>Strictly controlling your diet should get most people to the weight that they want in time, but most people want their results <em>now</em>. Well, you can certainly speed up your fat loss, but it'll involve some sweat and tears. You can add a <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT</a> program ( here's <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">another</a> ) into your routine, or you can simply check out the cardio section of the program picker for more alternatives.</p><p>Keep in mind that sustaining a caloric deficit can lead to loss of muscle mass as well, which is usually a Bad Thing. To avoid this, it is usually recommended to do some form of strength training atleast 2-3 times per week. Check out the muscle gain section of the Program Picker for more info regarding strength training programs.</p>"
-                },
-                "major": {
-                    "answer": "<p>Use a calculator such as <a href=\"http://www.deflab.me\">this one</a> to get an estimation of how many calories you should be consuming daily. Increase the amount of vegetables you consume (potatoes don't count :) ) because fiber helps in giving a feeling of fullness. Increasing your protein intake (via either consuming more meat or simply drinking whey protein shakes ) will both boost muscle gain and provide a longer-lasting feeling of fullness than carbs will.</p><p>Take weekly photographs of yourself, preferably in underwear/shorts so that you can see your belly, thighs and arms. If you're gaining muscle while losing fat, the weight on the scale may change less than you expect, but the mirror doesn't lie. Recording everything you eat will also make you more conscious about your intake and definitely helps in weight loss.</p><p>The thing that's really going to make or break your success is <strong>how well you focus and stick to your diet</strong>. Many people have successfully lost large amounts of fat by switching to a low carb diet. Keep in mind that this may not be the most suitable diet for everyone, but by far the majority of the population should see positive results.</p><p>For best results, you should combine this program with some form of exercise. The best form of exercise is the one that you enjoy doing. Whether it's weightlifting, running, swimming, mountain climbing, football, or throwing a frisbee around with friends, anything that gets your heart rate up for an hour or two will be beneficial.</p><p>Keep in mind that sustaining a caloric deficit can lead to loss of muscle mass as well, which is usually a Bad Thing. To avoid this, it is usually recommended to do some form of strength training atleast 2-3 times per week. Check out the muscle gain section of the Program Picker for more info regarding strength training programs.</p><p>Remember, the exercise will help, but the factor that will decide your fat loss is your diet. If you feel you're too heavy to do bodyweight exercises or anything inside a gym without hurting your joints, you can just go for a pleasant 30-45 minute walk daily while strictly controlling your diet, and you'll have to buy a new, smaller set of clothes soon. Once you reach a weight where you feel comfortable about doing some more strenuous exercise, check out the program picker again.</p>"
-                }
-            },
-            "answer": null
-        },
-        "flexibility": {
-            "question": "What sort of a flexibility program do you think you need?",
-            "choices": {
-                "basic": "I just want to get started on basic stretching",
-                "yoga": "I'm interested in yoga",
-                "squat_mobility": "I can't squat to full depth"
-            },
-            "children": {
-                "basic": {
-                    "answer": "<p>You should start with this <a href=\"http://phraktured.net/starting-stretching.html\">stretching program</a> and the <a href=\"http://phraktured.net/molding-mobility.html\">mobility program</a> that accompanies it. You should also check out the information <a href=\"http://www.reddit.com/help/faqs/Fitness#FlexibilityMobility\">here</a>, and if you feel up to it, you can try some of the routines given there as well.</p>"
-                },
-                "yoga": {
-                    "answer": "<p>You can try browsing through this <a href=\"http://www.yogajournal.com/poses/finder/browse_categories\">directory</a> of poses and picking a few to try. They cover a wide range of difficulties so you should be able to find the pose for you. Keep in mind that while regular practice of these poses will increase your flexibility, you should be wary of the claims of holistic healing and other \"spiritual\" statements on yoga websites. Investigate scientific evidence for and against claims before deciding whether or not to do something.</p>"
-                },
-                "squat_mobility": {
-                    "answer": "<p>You should start working on the <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/the_thirdworld_squat\">Third World Squat<a/> and <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/soft_tissue_work_for_tough_guys\">foam rolling</a>.</p><p>Perform a couple of sets of light curls before starting to squat. Warming up your hamstrings in this way can help you activate them at the bottom of a squat. Whenever you squat, make sure your weight stays on your heels throughout. If your weight shifts towards the front of your foot as you squat, you may need to strengthen your abdominal and hip flexor muscles. <a href=\"http://www.exrx.net/WeightExercises/Quadriceps/BBFrontSquat.html\">Front Squats</a> can help with stability as well.</p><p>Practice the third world squat multiple times a day, holding on to support if you have to. Add foam rolling into your warmup, and don't be surprised if it hurts like hell in the beginning. Be patient, because when it comes to flexibility, progress is measured in months.</p>"
-                }
-            },
-            "answer": null
-        },
-        "cardio": {
-            "question": "Is there any specific type of cardio you're interested in?",
-            "choices": {
-                "running": "Running",
-                "swimming": "Swimming",
-                "general": "General Cardio"
-            },
-            "children": {
-                "running": {
-                    "question": "What level of running are you at?",
-                    "choices": {
-                        "beginner": "I cannot run 5km continuously",
-                        "intermediate": "I can run 5km/I'm not interested in running 5km"
-                    },
-                    "children": {
-                        "beginner": {
-                            "answer": "<p>You should try <a href=\"http://www.coolrunning.com/engine/2/2_3/181.shtml\">Couch 2 5k</a>, and <a href=\"http://www.reddit.com/r/C25K/\">this</a> might help as well. C25K is a program designed for people who are beginners to moving faster than a lawnmower. Remember, consistency is everything. Don't push yourself too hard in the beginning and then give up. Take some time to read <a href=\"http://www.therunningadvisor.com/Training.html\">this</a> so that you don't hurt yourself unintentionally. Keep to the schedule and you'll be pleasantly surprised at the results.</p>"
-                        },
-                        "intermediate": {
-                            "question": "What kind of running are you interested in?",
-                            "choices": {
-                                "sprinting": "Sprinting ( < 800m )",
-                                "medium_distance": "Medium distance running ( < 10km/6 miles )",
-                                "long_distance": "Long distance running"
-                            },
-                            "children": {
-                                "sprinting": {
-                                    "answer": "<p>Learn about the basics of <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/an_ez_guide_to_sprinting\">preparing your body for sprinting</a>. Here's another <a href=\"http://www.bodybuilding.com/fun/par46.htm\">sprinting program</a>. Part 2 of the article contains the workout program.</p><p>One of the most commonly neglected muscle groups in athletes is the posterior chain. Everyone wants bulging biceps and a chest that forces you to walk through doorways sideways. However, the back, glutes and hamstrings contribute massively to a powerful body, and to a great sprint. Look into <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/dispelling_the_glute_myth\">building up powerful glutes</a>, and you'll get a powerful sprint in no time. Having <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/the_lost_art_of_hamstring_training\">strong hamstrings</a> (also read <a href=\"http://www.t-nation.com/free_online_article/most_recent/12_steps_to_kick_ass_hamstrings\">this</a>) will save you from losing months of workout time due to injuries. Finally, make sure you're aware of the basics of <a href=\"http://www.therunningadvisor.com/Training.html\">warming up for running</a></p>"
-                                },
-                                "medium_distance": {
-                                    "answer": "<p>You should try <a href=\"http://www.coolrunning.com/engine/2/2_4/145.shtml\">this</a>, and maybe even one of <a href=\"http://www.therunningadvisor.com/Training.html#techniques\">these</a> programs. Make sure you go through and understand the basics of <a href=\"http://www.therunningadvisor.com/Training.html\">running in general</a> as well.</p><p>Running in general uses a fair bit of the body's stored energy, so make sure you're <a href=\"http://www.therunningadvisor.com/Sports_Nutrition.html\">adjusting your diet</a> so that your body is refueled. More importantly, make sure you stay <a href=\"http://www.therunningadvisor.com/Sports_Nutrition.html#water\">hydrated</a>. Being dehydrated doesn't make you macho.</p>"
-                                },
-                                "long_distance": {
-                                    "answer": "<p>If you've never done a marathon before, try this <a href=\"http://www.therunningadvisor.com/beginner_marathon.html\">beginner program</a>. Otherwise, you might be interested in this <a href=\"http://www.therunningadvisor.com/advanced_marathon.html\">18 week schedule</a>. You might find some useful information <a href=\"http://www.therunningadvisor.com/marathon.html\">here</a>, and it can't hurt to <a href=\"http://www.therunningadvisor.com/Training.html\">review the basics of running</a> as well.</p><p>Running in general uses a fair bit of the body's stored energy, so make sure you're <a href=\"http://www.therunningadvisor.com/Sports_Nutrition.html\">adjusting your diet</a> so that your body is refueled. More importantly, make sure you stay <a href=\"http://www.therunningadvisor.com/Sports_Nutrition.html#water\">hydrated</a>. Being dehydrated doesn't make you macho.</p>"
-                                }
-                            },
-                            "answer": null
-                        }
-                    },
-                    "answer": null
-                },
-                "swimming": {
-                    "question": "Can you swim a mile without stopping for rest?",
-                    "choices": {
-                        "beginner": "I can't swim a mile",
-                        "intermediate": "I can swim a mile"
-                    },
-                    "children": {
-                        "beginner": {
-                            "answer": "<p>Try the <a href=\"http://ruthkazez.com/swimming/ZeroTo1mile.html\">Zero to 1650</a> program to get started with swimming.</p>"
-                        },
-                        "intermediate": {
-                            "answer": "<p>Here is a <a href=\"http://www.swimmingworldmagazine.com/swim-cgi/\">selection of workouts</a> that you may find useful to improve your performance in the water.</p>"
-                        }
-                    },
-                    "answer": null
-                },
-                "general": {
-                    "answer": "<p>Any activity that gets your heart rate up for an extended period of time can be useful in increasing conditioning and endurance. Here are some <a href=\"http://www.t-nation.com/free_online_article/most_recent/conditioning_101\">exercises</a> you can try to start out with.</p>"
-                }
-            },
-            "answer": null
-        },
-        "posture": {
-            "question": "What's wrong with your posture?",
-            "choices": {
-                "kyphosis": "I look like I'm slouching/hunchbacked (Kyphosis)",
-                "lordosis": "My lumbar spine curves in more than it should (Lordosis)",
-                "anterior_pelvic_tilt": "I've got Anterior Pelvic Tilt",
-                "posterior_pelvic_tilt": "I've got Posterior Pelvic Tilt"
-            },
-            "children": {
-                "kyphosis": {
-                    "answer": "<p>Due to the effect that poor posture can have on your general health, it is highly advisable to consult a physiotherapist depending on the severity of your condition. If that is not possible, or your posture only requires slight correction, you may try <a href=\"http://www.reddit.com/r/Fitness/comments/exgiu/a_guide_to_fixing_computer_guy_posture_upper_body/\">A Guide to Fixing Computer Guy Posture</a></p>"
-                },
-                "lordosis": {
-                    "answer": "<p>Due to the effect that poor posture can have on your general health, it is highly advisable to consult a physiotherapist depending on the severity of your condition. If that is not possible, or your posture only requires slight correction, you may try <a href=\"http://stronglifts.com/lordosis-why-it-causes-lower-back-pain-how-to-fix-it/\">Stronglifts: How to Fix Lordosis</a></p>"
-                },
-                "anterior_pelvic_tilt": {
-                    "answer": "<p>Due to the effect that poor posture can have on your general health, it is highly advisable to consult a physiotherapist depending on the severity of your condition. If that is not possible, or your posture only requires slight correction, you may try <a href=\"http://www.reddit.com/r/Fitness/comments/ewrr0/writeup_on_the_dreaded_anterior_pelvic_tilt_or/\">A Guide to Fixing Anterior Pelvic Tilt</a></p>"
-                },
-                "posterior_pelvic_tilt": {
-                    "answer": "<p>Due to the effect that poor posture can have on your general health, it is highly advisable to consult a physiotherapist depending on the severity of your condition. If that is not possible, or your posture only requires slight correction, you may try <a href=\"http://www.reddit.com/r/Fitness/comments/f08rd/writeup_about_the_posterior_pelvic_tilt_or_the_no/\">A Guide to Fixing Posterior Pelvic Tilt</a></p>"
-                }
-            },
-            "answer": null
-        },
-        "military": {
-            "question": "What kind of program are you interested in?",
-            "choices": {
-                "law_enforcement": "Law Enforcement",
-                "seal_training": "BUD/S Training",
-                "ranger": "Ranger Training",
-                "usaf": "USAF Pre-Boot Camp",
-                "special_forces": "US Army Special Forces",
-                "firefighter": "Firefighter"
-            },
-            "children": {
-                "law_enforcement": {
-                    "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.military.com/military-fitness/law-enforcement-training/ace-any-law-enforcement-fitness-test\">Law Enforcement</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
-                },
-                "seal_training": {
-                    "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.navysealteams.com/warning.htm\">BUD/S</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
-                },
-                "ranger": {
-                    "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, you can find 30, 60 and 90 day prep plans <a href=\"http://www.passranger.com/p/physical-training.html\">here</a>. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
-                },
-                "usaf": {
-                    "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.military.com/military-fitness/air-force-basic-training/air-force-pre-boot-camp-workout\">USAF</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
-                },
-                "special_forces": {
-                    "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.military.com/military-fitness/army-special-operations/army-green-beret-training\">US Army Special Forces</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
-                },
-                "firefighter": {
-                    "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.military.com/military-fitness/law-enforcement-training/firefighter-fitness\">firefighter</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
-                }
-            },
-            "answer": null
-        },
-        "bodyweight": {
-            "answer": "<p>You can try popular bodyweight training programs such as <a href=\"http://simplefit.org\">SimpleFit</a>, <a href=\"http://beastskills.com/tutorials\">Beast Skills</a> or Convict Conditioning. Your progress might not be as rapid compared to someone who uses free weights, but you will definitely see gains in strength and conditioning. All these programs provide variations to ramp up the difficulty over time, so even if you're thinking, \"But I can already do dozens of pushups\", you should still check those links out. Hopefully you have access to a bar of some sort that you can do pullups/chinups off of.</p><p>If you're interested in gymnastics, <a href=\"http://www.eatmoveimprove.com/2012/02/a-beginners-guide-to-overcoming-gravity/\">Overcoming Gravity</a> is an excellent beginners program. There is also a <a href=\"https://docs.google.com/spreadsheet/ccc?key=0ArzTY8Rx2z1DdDZlaUVxa1NISlQ0RVpMYVlRaklJelE#gid=0\">chart</a> that organizes the exercises in that program by difficulty level and category.</p><p>You can add a <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT</a> program ( here's <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">another</a> ) if you wish to boost your fat loss, but make sure you adjust your diet to account for the extra energy expenditure.</p><p>The Police/Military training section includes more bodyweight programs that are focused around basic movements such as pushups, pullups and running. </p>"
-        },
-        "technique": {
-            "answer": "You can check out <a href=\"https://www.youtube.com/user/armoryhpft\">this Youtube channel</a>, which offers a selecton of videos explaining how to perform many different exercises. Use the 'Search Channel' feature to locate the lift you're interested in."
         }
+      },
+      "answer": null
     },
-    "answer": null
+    "fat_loss": {
+      "question": "How much weight do you need to lose?",
+      "choices": {
+        "minor": "Less than 10kg/25lbs",
+        "major": "More than 10kg/25lbs"
+      },
+      "children": {
+        "minor": {
+          "answer": "<p>Use a calculator such as <a href=\"http://www.deflab.me\">this one</a> to get an estimation of how many calories you should be consuming daily. Increase the amount of vegetables you consume (potatoes don't count :) ) because fiber helps in giving a feeling of fullness. Increasing your protein intake (via either consuming more meat or simply drinking whey protein shakes ) will both boost muscle gain and provide a longer-lasting feeling of fullness than carbs will.</p><p>Take weekly photographs of yourself, preferably in underwear/shorts so that you can see your belly, thighs and arms. If you're gaining muscle while losing fat, the weight on the scale may change less than you expect, but the mirror doesn't lie. Recording everything you eat will also make you more conscious about your intake and definitely helps in weight loss.</p><p>Strictly controlling your diet should get most people to the weight that they want in time, but most people want their results <em>now</em>. Well, you can certainly speed up your fat loss, but it'll involve some sweat and tears. You can add a <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT</a> program ( here's <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">another</a> ) into your routine, or you can simply check out the cardio section of the program picker for more alternatives.</p><p>Keep in mind that sustaining a caloric deficit can lead to loss of muscle mass as well, which is usually a Bad Thing. To avoid this, it is usually recommended to do some form of strength training atleast 2-3 times per week. Check out the muscle gain section of the Program Picker for more info regarding strength training programs.</p>"
+        },
+        "major": {
+          "answer": "<p>Use a calculator such as <a href=\"http://www.deflab.me\">this one</a> to get an estimation of how many calories you should be consuming daily. Increase the amount of vegetables you consume (potatoes don't count :) ) because fiber helps in giving a feeling of fullness. Increasing your protein intake (via either consuming more meat or simply drinking whey protein shakes ) will both boost muscle gain and provide a longer-lasting feeling of fullness than carbs will.</p><p>Take weekly photographs of yourself, preferably in underwear/shorts so that you can see your belly, thighs and arms. If you're gaining muscle while losing fat, the weight on the scale may change less than you expect, but the mirror doesn't lie. Recording everything you eat will also make you more conscious about your intake and definitely helps in weight loss.</p><p>The thing that's really going to make or break your success is <strong>how well you focus and stick to your diet</strong>. Many people have successfully lost large amounts of fat by switching to a low carb diet. Keep in mind that this may not be the most suitable diet for everyone, but by far the majority of the population should see positive results.</p><p>For best results, you should combine this program with some form of exercise. The best form of exercise is the one that you enjoy doing. Whether it's weightlifting, running, swimming, mountain climbing, football, or throwing a frisbee around with friends, anything that gets your heart rate up for an hour or two will be beneficial.</p><p>Keep in mind that sustaining a caloric deficit can lead to loss of muscle mass as well, which is usually a Bad Thing. To avoid this, it is usually recommended to do some form of strength training atleast 2-3 times per week. Check out the muscle gain section of the Program Picker for more info regarding strength training programs.</p><p>Remember, the exercise will help, but the factor that will decide your fat loss is your diet. If you feel you're too heavy to do bodyweight exercises or anything inside a gym without hurting your joints, you can just go for a pleasant 30-45 minute walk daily while strictly controlling your diet, and you'll have to buy a new, smaller set of clothes soon. Once you reach a weight where you feel comfortable about doing some more strenuous exercise, check out the program picker again.</p>"
+        }
+      },
+      "answer": null
+    },
+    "flexibility": {
+      "question": "What sort of a flexibility program do you think you need?",
+      "choices": {
+        "basic": "I just want to get started on basic stretching",
+        "yoga": "I'm interested in yoga",
+        "squat_mobility": "I can't squat to full depth"
+      },
+      "children": {
+        "basic": {
+          "answer": "<p>You should start with this <a href=\"http://phraktured.net/starting-stretching.html\">stretching program</a> and the <a href=\"http://phraktured.net/molding-mobility.html\">mobility program</a> that accompanies it. You should also check out the information <a href=\"http://www.reddit.com/help/faqs/Fitness#FlexibilityMobility\">here</a>, and if you feel up to it, you can try some of the routines given there as well.</p>"
+        },
+        "yoga": {
+          "answer": "<p>You can try browsing through this <a href=\"http://www.yogajournal.com/poses/finder/browse_categories\">directory</a> of poses and picking a few to try. They cover a wide range of difficulties so you should be able to find the pose for you. Keep in mind that while regular practice of these poses will increase your flexibility, you should be wary of the claims of holistic healing and other \"spiritual\" statements on yoga websites. Investigate scientific evidence for and against claims before deciding whether or not to do something.</p>"
+        },
+        "squat_mobility": {
+          "answer": "<p>You should start working on the <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/the_thirdworld_squat\">Third World Squat<a/> and <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/soft_tissue_work_for_tough_guys\">foam rolling</a>.</p><p>Perform a couple of sets of light curls before starting to squat. Warming up your hamstrings in this way can help you activate them at the bottom of a squat. Whenever you squat, make sure your weight stays on your heels throughout. If your weight shifts towards the front of your foot as you squat, you may need to strengthen your abdominal and hip flexor muscles. <a href=\"http://www.exrx.net/WeightExercises/Quadriceps/BBFrontSquat.html\">Front Squats</a> can help with stability as well.</p><p>Practice the third world squat multiple times a day, holding on to support if you have to. Add foam rolling into your warmup, and don't be surprised if it hurts like hell in the beginning. Be patient, because when it comes to flexibility, progress is measured in months.</p>"
+        }
+      },
+      "answer": null
+    },
+    "cardio": {
+      "question": "Is there any specific type of cardio you're interested in?",
+      "choices": {
+        "running": "Running",
+        "swimming": "Swimming",
+        "general": "General Cardio"
+      },
+      "children": {
+        "running": {
+          "question": "What level of running are you at?",
+          "choices": {
+            "beginner": "I cannot run 5km continuously",
+            "intermediate": "I can run 5km/I'm not interested in running 5km"
+          },
+          "children": {
+            "beginner": {
+              "answer": "<p>You should try <a href=\"http://www.coolrunning.com/engine/2/2_3/181.shtml\">Couch 2 5k</a>, and <a href=\"http://www.reddit.com/r/C25K/\">this</a> might help as well. C25K is a program designed for people who are beginners to moving faster than a lawnmower. Remember, consistency is everything. Don't push yourself too hard in the beginning and then give up. Take some time to read <a href=\"http://www.therunningadvisor.com/Training.html\">this</a> so that you don't hurt yourself unintentionally. Keep to the schedule and you'll be pleasantly surprised at the results.</p>"
+            },
+            "intermediate": {
+              "question": "What kind of running are you interested in?",
+              "choices": {
+                "sprinting": "Sprinting ( < 800m )",
+                "medium_distance": "Medium distance running ( < 10km/6 miles )",
+                "long_distance": "Long distance running"
+              },
+              "children": {
+                "sprinting": {
+                  "answer": "<p>Learn about the basics of <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/an_ez_guide_to_sprinting\">preparing your body for sprinting</a>. Here's another <a href=\"http://www.bodybuilding.com/fun/par46.htm\">sprinting program</a>. Part 2 of the article contains the workout program.</p><p>One of the most commonly neglected muscle groups in athletes is the posterior chain. Everyone wants bulging biceps and a chest that forces you to walk through doorways sideways. However, the back, glutes and hamstrings contribute massively to a powerful body, and to a great sprint. Look into <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/dispelling_the_glute_myth\">building up powerful glutes</a>, and you'll get a powerful sprint in no time. Having <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/the_lost_art_of_hamstring_training\">strong hamstrings</a> (also read <a href=\"http://www.t-nation.com/free_online_article/most_recent/12_steps_to_kick_ass_hamstrings\">this</a>) will save you from losing months of workout time due to injuries. Finally, make sure you're aware of the basics of <a href=\"http://www.therunningadvisor.com/Training.html\">warming up for running</a></p>"
+                },
+                "medium_distance": {
+                  "answer": "<p>You should try <a href=\"http://www.coolrunning.com/engine/2/2_4/145.shtml\">this</a>, and maybe even one of <a href=\"http://www.therunningadvisor.com/Training.html#techniques\">these</a> programs. Make sure you go through and understand the basics of <a href=\"http://www.therunningadvisor.com/Training.html\">running in general</a> as well.</p><p>Running in general uses a fair bit of the body's stored energy, so make sure you're <a href=\"http://www.therunningadvisor.com/Sports_Nutrition.html\">adjusting your diet</a> so that your body is refueled. More importantly, make sure you stay <a href=\"http://www.therunningadvisor.com/Sports_Nutrition.html#water\">hydrated</a>. Being dehydrated doesn't make you macho.</p>"
+                },
+                "long_distance": {
+                  "answer": "<p>If you've never done a marathon before, try this <a href=\"http://www.therunningadvisor.com/beginner_marathon.html\">beginner program</a>. Otherwise, you might be interested in this <a href=\"http://www.therunningadvisor.com/advanced_marathon.html\">18 week schedule</a>. You might find some useful information <a href=\"http://www.therunningadvisor.com/marathon.html\">here</a>, and it can't hurt to <a href=\"http://www.therunningadvisor.com/Training.html\">review the basics of running</a> as well.</p><p>Running in general uses a fair bit of the body's stored energy, so make sure you're <a href=\"http://www.therunningadvisor.com/Sports_Nutrition.html\">adjusting your diet</a> so that your body is refueled. More importantly, make sure you stay <a href=\"http://www.therunningadvisor.com/Sports_Nutrition.html#water\">hydrated</a>. Being dehydrated doesn't make you macho.</p>"
+                }
+              },
+              "answer": null
+            }
+          },
+          "answer": null
+        },
+        "swimming": {
+          "question": "Can you swim a mile without stopping for rest?",
+          "choices": {
+            "beginner": "I can't swim a mile",
+            "intermediate": "I can swim a mile"
+          },
+          "children": {
+            "beginner": {
+              "answer": "<p>Try the <a href=\"http://ruthkazez.com/swimming/ZeroTo1mile.html\">Zero to 1650</a> program to get started with swimming.</p>"
+            },
+            "intermediate": {
+              "answer": "<p>Here is a <a href=\"http://www.swimmingworldmagazine.com/swim-cgi/\">selection of workouts</a> that you may find useful to improve your performance in the water.</p>"
+            }
+          },
+          "answer": null
+        },
+        "general": {
+          "answer": "<p>Any activity that gets your heart rate up for an extended period of time can be useful in increasing conditioning and endurance. Here are some <a href=\"http://www.t-nation.com/free_online_article/most_recent/conditioning_101\">exercises</a> you can try to start out with.</p>"
+        }
+      },
+      "answer": null
+    },
+    "posture": {
+      "question": "What's wrong with your posture?",
+      "choices": {
+        "kyphosis": "I look like I'm slouching/hunchbacked (Kyphosis)",
+        "lordosis": "My lumbar spine curves in more than it should (Lordosis)",
+        "anterior_pelvic_tilt": "I've got Anterior Pelvic Tilt",
+        "posterior_pelvic_tilt": "I've got Posterior Pelvic Tilt"
+      },
+      "children": {
+        "kyphosis": {
+          "answer": "<p>Due to the effect that poor posture can have on your general health, it is highly advisable to consult a physiotherapist depending on the severity of your condition. If that is not possible, or your posture only requires slight correction, you may try <a href=\"http://www.reddit.com/r/Fitness/comments/exgiu/a_guide_to_fixing_computer_guy_posture_upper_body/\">A Guide to Fixing Computer Guy Posture</a></p>"
+        },
+        "lordosis": {
+          "answer": "<p>Due to the effect that poor posture can have on your general health, it is highly advisable to consult a physiotherapist depending on the severity of your condition. If that is not possible, or your posture only requires slight correction, you may try <a href=\"http://stronglifts.com/lordosis-why-it-causes-lower-back-pain-how-to-fix-it/\">Stronglifts: How to Fix Lordosis</a></p>"
+        },
+        "anterior_pelvic_tilt": {
+          "answer": "<p>Due to the effect that poor posture can have on your general health, it is highly advisable to consult a physiotherapist depending on the severity of your condition. If that is not possible, or your posture only requires slight correction, you may try <a href=\"http://www.reddit.com/r/Fitness/comments/ewrr0/writeup_on_the_dreaded_anterior_pelvic_tilt_or/\">A Guide to Fixing Anterior Pelvic Tilt</a></p>"
+        },
+        "posterior_pelvic_tilt": {
+          "answer": "<p>Due to the effect that poor posture can have on your general health, it is highly advisable to consult a physiotherapist depending on the severity of your condition. If that is not possible, or your posture only requires slight correction, you may try <a href=\"http://www.reddit.com/r/Fitness/comments/f08rd/writeup_about_the_posterior_pelvic_tilt_or_the_no/\">A Guide to Fixing Posterior Pelvic Tilt</a></p>"
+        }
+      },
+      "answer": null
+    },
+    "military": {
+      "question": "What kind of program are you interested in?",
+      "choices": {
+        "law_enforcement": "Law Enforcement",
+        "seal_training": "BUD/S Training",
+        "ranger": "Ranger Training",
+        "usaf": "USAF Pre-Boot Camp",
+        "special_forces": "US Army Special Forces",
+        "firefighter": "Firefighter"
+      },
+      "children": {
+        "law_enforcement": {
+          "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.military.com/military-fitness/law-enforcement-training/ace-any-law-enforcement-fitness-test\">Law Enforcement</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
+        },
+        "seal_training": {
+          "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.navysealteams.com/warning.htm\">BUD/S</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
+        },
+        "ranger": {
+          "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, you can find 30, 60 and 90 day prep plans <a href=\"http://www.passranger.com/p/physical-training.html\">here</a>. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
+        },
+        "usaf": {
+          "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.military.com/military-fitness/air-force-basic-training/air-force-pre-boot-camp-workout\">USAF</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
+        },
+        "special_forces": {
+          "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.military.com/military-fitness/army-special-operations/army-green-beret-training\">US Army Special Forces</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
+        },
+        "firefighter": {
+          "answer": "<p>Law enforcement and military training often centers around very basic bodyweight exercises and movements such as pushups, pullups, running, dragging, carrying, etc. A common approach to getting better at an activity is to just do more of it, and this is what you'll find in most such training programs. While this works as a general approach, sometimes it may be useful to focus on a specific weakness instead.</p><p>If you wish to try the general approach, here is one sample <a href=\"http://www.military.com/military-fitness/law-enforcement-training/firefighter-fitness\">firefighter</a> training program. If you're sure of your personal weak points and wish to focus on them, try the muscle gain or cardio sections of the Program Picker instead.</p>"
+        }
+      },
+      "answer": null
+    },
+    "bodyweight": {
+      "answer": "<p>You can try popular bodyweight training programs such as <a href=\"http://simplefit.org\">SimpleFit</a>, <a href=\"http://beastskills.com/tutorials\">Beast Skills</a> or Convict Conditioning. Your progress might not be as rapid compared to someone who uses free weights, but you will definitely see gains in strength and conditioning. All these programs provide variations to ramp up the difficulty over time, so even if you're thinking, \"But I can already do dozens of pushups\", you should still check those links out. Hopefully you have access to a bar of some sort that you can do pullups/chinups off of.</p><p>If you're interested in gymnastics, <a href=\"http://www.eatmoveimprove.com/2012/02/a-beginners-guide-to-overcoming-gravity/\">Overcoming Gravity</a> is an excellent beginners program. There is also a <a href=\"https://docs.google.com/spreadsheet/ccc?key=0ArzTY8Rx2z1DdDZlaUVxa1NISlQ0RVpMYVlRaklJelE#gid=0\">chart</a> that organizes the exercises in that program by difficulty level and category.</p><p>You can add a <a href=\"http://www.askmen.com/sports/bodybuilding_100/135b_fitness_tip.html\">HIIT</a> program ( here's <a href=\"http://www.t-nation.com/free_online_article/sports_body_training_performance/running_man\">another</a> ) if you wish to boost your fat loss, but make sure you adjust your diet to account for the extra energy expenditure.</p><p>The Police/Military training section includes more bodyweight programs that are focused around basic movements such as pushups, pullups and running. </p>"
+    },
+    "technique": {
+      "answer": "You can check out <a href=\"https://www.youtube.com/user/armoryhpft\">this Youtube channel</a>, which offers a selecton of videos explaining how to perform many different exercises. Use the 'Search Channel' feature to locate the lift you're interested in."
+    }
+  },
+  "answer": null
 }
