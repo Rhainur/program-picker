@@ -21,7 +21,9 @@ function displayQuestion(routeString){
 	if(routeString===null){
 		routeString='';
 		if(window.location.hash.length>1){
-			$.ajax('http://www.rohitnair.net/pp/logger.php?path=' + encodeURIComponent(window.location.hash));
+			// Google Analytics
+			ga('send', 'pageview', '/pp/' + encodeURIComponent(window.location.hash.substring(1)));
+
 			route=window.location.hash.substring(1).split('/');
 			for(i in route){
 				routeString += route[i] + '/';
@@ -67,15 +69,17 @@ function displayQuestion(routeString){
 	}
 
 	$('.choice-container a,.stack-container a,.min-strength-warning a').off().click(function(){
+		// Google Analytics
+		ga('send', 'pageview', '/pp/' + encodeURIComponent($(this).attr('href').substring(1)));
+
 		displayQuestion($(this).attr('href').substring(1));
-		$.ajax('http://www.rohitnair.net/pp/logger.php?path=' + encodeURIComponent($(this).attr('href')));
 		if($(window).scrollTop() > $('.stack-container').position().top)
 			$('html,body').animate({scrollTop: $('.stack-container').position().top});
 	});
 
 	$('.answer-container a').off().click(function(e){
+		// Open all answer links in a new tab
 		e.preventDefault();
-		$.ajax('http://www.rohitnair.net/pp/logger.php?path=' + encodeURIComponent($(this).attr('href')));
 		window.open($(this).attr('href'));
 	});
 }
