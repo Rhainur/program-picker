@@ -69,12 +69,16 @@ function displayQuestion(routeString){
 	}
 
 	$('.choice-container a,.stack-container a,.min-strength-warning a').off().click(function(){
-		// Google Analytics
-		ga('send', 'pageview', '/pp/' + encodeURIComponent($(this).attr('href').substring(1)));
+		if($(this).attr('href').charAt(0) == '#'){
+			// Google Analytics
+			ga('send', 'pageview', '/pp/' + encodeURIComponent($(this).attr('href').substring(1)));
 
-		displayQuestion($(this).attr('href').substring(1));
-		if($(window).scrollTop() > $('.stack-container').position().top)
-			$('html,body').animate({scrollTop: $('.stack-container').position().top});
+			displayQuestion($(this).attr('href').substring(1));
+			if($(window).scrollTop() > $('.stack-container').position().top){
+				$('html,body').animate({scrollTop: $('.stack-container').position().top});
+			}
+		}
+
 	});
 
 	$('.answer-container a').off().click(function(e){
